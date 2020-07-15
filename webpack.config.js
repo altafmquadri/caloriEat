@@ -1,8 +1,13 @@
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+const webpack = require('webpack')
 
 process.env.NODE_ENV = process.env.NODE_ENV || 'development'
+
+if(process.env.NODE_ENV === 'development' || process.env.NODE_ENV === 'test') {
+    require('dotenv').config({path: '.env.development'})
+}
 
 module.exports = env => {
     const isProduction = env === 'production'
@@ -54,6 +59,10 @@ module.exports = env => {
             }),
             new MiniCssExtractPlugin({
                 filename: 'styles.css'
+            }), 
+            new webpack.DefinePlugin({
+                'process.env.EDAMAM_APP_ID': JSON.stringify(process.env.EDAMAM_APP_ID),
+                'process.env.EDAMAM_APP_KEY': JSON.stringify(process.env.EDAMAM_APP_KEY)
             })
         ]
     }
