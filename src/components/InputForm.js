@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux'
+import { fetchFood } from './actions/food'
 
 class InputForm extends Component {
     state = {
@@ -12,9 +14,7 @@ class InputForm extends Component {
     onSubmit = e => {
         e.preventDefault()
         const lookup = this.state.foodItem.split(' ').join('%20')
-        fetch(`https://api.edamam.com/api/food-database/v2/parser?ingr=${lookup}&app_id=${process.env.EDAMAM_APP_ID}&app_key=${process.env.EDAMAM_APP_KEY}`)
-            .then(res => res.json())
-            .then(data => console.log(data))
+        this.props.fetchFood(lookup)
     }
 
     render() {
@@ -31,4 +31,10 @@ class InputForm extends Component {
     }
 }
 
-export default InputForm;
+const mapDispatchToProps = (dispatch) => {
+    return {
+        fetchFood: lookup => dispatch(fetchFood(lookup))
+    }
+}
+
+export default connect(undefined, mapDispatchToProps)(InputForm)
