@@ -1,6 +1,6 @@
 export const getFood = (food) => ({
     type: 'GET_FOOD',
-    food
+    payload: food
 })
 
 export const fetchFood = (lookup) => {
