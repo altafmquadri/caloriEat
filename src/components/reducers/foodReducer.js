@@ -3,17 +3,31 @@ const foodReducer = (state = {}, action) => {
     switch (action.type) {
         case 'GET_FOOD':
             {
-                // console.log(action.payload);
-                const { ENERC_KCAL: calories,
-                    CHOCDF: carbohydrates,
-                    FAT: fat,
-                    FIBTG: fiber,
-                    PROCNT: protein
-                } = action.payload.parsed[0].food.nutrients
-
-                const { text: foodItem } = action.payload
-                const { image, foodId } = action.payload.parsed[0].food
-                const { measures } = action.payload.hints[0]
+                const {
+                    text: foodItem,
+                    hints: {
+                        0: {
+                            measures: [
+                                ...measures
+                            ]
+                        }
+                    },
+                    parsed: {
+                        0: {
+                            food: {
+                                image,
+                                foodId,
+                                nutrients: {
+                                    ENERC_KCAL: calories,
+                                    CHOCDF: carbohydrates,
+                                    FAT: fat,
+                                    FIBTG: fiber,
+                                    PROCNT: protein
+                                }
+                            }
+                        }
+                    }
+                } = action.payload
 
                 const item = {
                     foodItem,
@@ -26,6 +40,7 @@ const foodReducer = (state = {}, action) => {
                     measures,
                     image
                 }
+                console.log(item);
                 return { ...state, ...item }
             }
 
@@ -57,5 +72,3 @@ const foodReducer = (state = {}, action) => {
 }
 
 export default foodReducer
-
-//need to add a case for fetching the serving which is done via a post

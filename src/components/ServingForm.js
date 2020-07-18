@@ -21,10 +21,10 @@ class ServingForm extends Component {
 
     onChangeServing = (e) => this.setState({ measureURI: e.target.value })
     onChangeQuantity = (e) => this.setState({ quantity: e.target.value })
+
     render() {
         const { measures } = this.props.food
         return (
-
             <form onSubmit={this.onSubmit}>
                 <select
                     onChange={this.onChangeServing}
@@ -34,7 +34,8 @@ class ServingForm extends Component {
 
                 <input value={this.state.quantity}
                     type="text"
-                    onChange={this.onChangeQuantity} />
+                    onChange={this.onChangeQuantity}>
+                </input>
 
                 <button type="submit">Submit</button>
             </form>
