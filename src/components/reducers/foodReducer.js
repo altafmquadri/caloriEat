@@ -40,7 +40,6 @@ const foodReducer = (state = {}, action) => {
                     measures,
                     image
                 }
-                console.log(item);
                 return { ...state, ...item }
             }
 

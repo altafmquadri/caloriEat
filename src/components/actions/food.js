@@ -54,3 +54,6 @@ export const fetchServing = (obj) => {
             .then(serving => dispatch(getServing(serving)))
     }
 }
+
+
+//should probably pass obj to getServing, so it can pass that to the reducer, so I can take obj add it to the food state to eventually pass to a meal form so I can reuse displayFood component to add the meal as well as edit the meal
