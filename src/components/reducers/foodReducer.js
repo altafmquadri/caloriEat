@@ -61,7 +61,8 @@ const foodReducer = (state = {}, action) => {
                     carbohydrates: parseFloat(carbohydrates).toFixed(2),
                     fat: parseFloat(fat).toFixed(2),
                     fiber: parseFloat(fiber).toFixed(2),
-                    protein: parseFloat(protein).toFixed(2)
+                    protein: parseFloat(protein).toFixed(2),
+                    ...action.obj
                 }
                 return { ...state, ...item }
             }

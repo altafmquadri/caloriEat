@@ -11,11 +11,13 @@ export const getFood = (food) => ({
 /**
  * @function getServing action to be dispatched by reducer
  * @param {object} serving food item retrieved from the nutrient API
+ * @param {object} objToState add in serving parameters obj to the rest of state
  * @returns {object} the serving measurement of food item
  */
-export const getServing = (serving) => ({
+export const getServing = (serving, objToState) => ({
     type: 'GET_SERVING',
-    payload: serving
+    payload: serving,
+    obj: objToState
 })
 
 /**
@@ -51,7 +53,7 @@ export const fetchServing = (obj) => {
             })
         })
             .then(res => res.json())
-            .then(serving => dispatch(getServing(serving)))
+            .then(serving => dispatch(getServing(serving, obj)))
     }
 }
 
