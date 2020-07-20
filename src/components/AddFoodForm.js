@@ -5,6 +5,7 @@ import 'react-dates/initialize'
 import 'react-dates/lib/css/_datepicker.css'
 import { SingleDatePicker } from 'react-dates'
 import { addFood } from './actions/food'
+import { addMeal } from './actions/meal'
 
 class AddFoodForm extends Component {
     state = {
@@ -23,7 +24,11 @@ class AddFoodForm extends Component {
             date: this.state.date,
             mealCategory: this.state.mealCategory
         }
-        this.props.addFood(food)
+        this.props.addFood(food) //from mapDispatch to props updates the food state, viewing in redux tools shows proper state for food
+        const meal = this.props.food //comes from mapStateToProps 
+        console.log(this.props, 'logging props before meal assignment');
+        console.log(meal, 'in form') //logging this shows it's not the updated state I am expecting
+        this.props.addMeal(meal) //trying to add state from food reducer to the meal reducer, meal reducer is not updated via redux tools
     }
 
     onFocusChange = ({ focused }) => this.setState({ calendarFocused: focused })
@@ -56,7 +61,12 @@ class AddFoodForm extends Component {
 }
 
 const mapDispatchToProps = (dispatch) => ({
-    addFood: food => dispatch(addFood(food))
+    addFood: food => dispatch(addFood(food)),
+    addMeal: meal => dispatch(addMeal(meal))
 })
 
-export default connect(undefined, mapDispatchToProps)(AddFoodForm)
+const mapStateToProps = state => ({
+    food: state.food
+})
+
+export default connect(mapStateToProps, mapDispatchToProps)(AddFoodForm)

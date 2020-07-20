@@ -20,6 +20,11 @@ export const getServing = (serving, objToState) => ({
     obj: objToState
 })
 
+/**
+ * @function addFood adds the action to add properties of food to the reducer
+ * @param {object} food adds food properties of date and mealCategory
+ * @returns {object} food with properties to add to state in the reducer
+ */
 export const addFood = (food) => ({
     type: 'ADD_FOOD',
     payload: food
