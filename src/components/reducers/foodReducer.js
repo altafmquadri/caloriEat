@@ -66,6 +66,17 @@ const foodReducer = (state = {}, action) => {
                 }
                 return { ...state, ...item }
             }
+        case 'ADD_FOOD':
+            {
+                console.log(action.payload);
+                const { date, mealCategory } = action.payload
+                const itemDetails = {
+                    date,
+                    mealCategory
+                }
+                console.log(itemDetails);
+                return { ...state, ...itemDetails }
+            }
         default:
             return state
     }

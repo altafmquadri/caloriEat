@@ -20,6 +20,11 @@ export const getServing = (serving, objToState) => ({
     obj: objToState
 })
 
+export const addFood = (food) => ({
+    type: 'ADD_FOOD',
+    payload: food
+})
+
 /**
  * @function fetchFood fetch to retrieve food
  * @param {string} lookup to be passed into fetch

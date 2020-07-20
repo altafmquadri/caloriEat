@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux'
 import ServingForm from './ServingForm'
+import AddFoodForm from './AddFoodForm'
 
 class DisplayFood extends Component {
 
@@ -26,6 +27,7 @@ class DisplayFood extends Component {
                 <img alt={foodItem} src={image}></img>
                 <div>
                     <ServingForm />
+                    <AddFoodForm />
                 </div>
             </div >
         )
