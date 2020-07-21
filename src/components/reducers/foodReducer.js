@@ -75,6 +75,8 @@ const foodReducer = (state = {}, action) => {
                 }
                 return { ...state, ...itemDetails }
             }
+        case 'CLEAR_FOOD':
+            return state = {}
         default:
             return state
     }

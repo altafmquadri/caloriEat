@@ -31,6 +31,13 @@ export const addFood = (food) => ({
 })
 
 /**
+ * @function clearFood dispatches action to clear the food state
+ */
+export const clearFood = () => ({
+    type: 'CLEAR_FOOD'
+})
+
+/**
  * @function fetchFood fetch to retrieve food
  * @param {string} lookup to be passed into fetch
  * @returns {function} which will dispatch the action to bring the food item into state
@@ -67,8 +74,3 @@ export const fetchServing = (obj) => {
     }
 }
 
-
-//should probably pass obj to getServing, so it can pass that to the reducer, so I can take obj add it to the food state to eventually pass to a meal form so I can reuse displayFood component to add the meal as well as edit the meal
-
-
-//Not sure what's the meal doing, but the solution I'd go with is probably to create a new thunk action where you dispatch addFood first, then use the getState function from the thunk action parameters to get the updated state from the store, then use this updated state to dispatch a addMeal action.  It's also possible for the meal reducers to handle the ADD_FOOD action and automatically update the meal at the same time as the food.
