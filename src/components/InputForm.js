@@ -15,6 +15,7 @@ class InputForm extends Component {
         e.preventDefault()
         const lookup = this.state.foodItem.split(' ').join('%20')
         this.props.fetchFood(lookup)
+        this.setState({ foodItem: '' })
     }
 
     render() {

@@ -1,13 +1,11 @@
 import React, { Component } from 'react';
-import InputForm from './InputForm'
-import DisplayFood from './DisplayFood'
+import SummaryPage from './SummaryPage'
 
 class App extends Component {
     render() {
         return (
             <div>
-                <InputForm />
-                <DisplayFood />
+                <SummaryPage />
             </div>
         )
     }

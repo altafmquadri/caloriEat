@@ -45,5 +45,3 @@ const mapStateToProps = (state) => ({
 })
 
 export default connect(mapStateToProps)(DisplayFood)
-
-//should create another form to add meal, breakfast, lunch, dinner snack, and use state to pass meal state to component to reuse it to search and display food as well as add food

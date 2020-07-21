@@ -45,7 +45,6 @@ const foodReducer = (state = {}, action) => {
 
         case 'GET_SERVING':
             {
-                // console.log(action.payload)
                 const {
                     calories,
                     totalNutrients: {

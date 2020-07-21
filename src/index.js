@@ -2,11 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom'
 import { Provider } from 'react-redux'
 import configureStore from '../src/components/store/store'
-import App from './components/App'
+import AppRouter from './routers/AppRouter'
 
 const store = configureStore()
 
 ReactDOM.render(
     <Provider store={store}>
-        <App />
+        <AppRouter />
     </Provider>, document.getElementById('app'))
