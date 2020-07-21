@@ -17,3 +17,5 @@ class SearchFood extends Component {
 }
 
 export default SearchFood;
+
+//probably need some kind of list to display adding of food and a button that programmatically routes user to summary page
