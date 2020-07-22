@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import SummaryPage from './SummaryPage'
+import MealPage from './MealPage';
 
 class App extends Component {
     render() {
         return (
             <div>
-                <SummaryPage />
+                <MealPage />
             </div>
         )
     }

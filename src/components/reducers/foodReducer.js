@@ -1,4 +1,5 @@
 
+
 const foodReducer = (state = {}, action) => {
     switch (action.type) {
         case 'GET_FOOD':

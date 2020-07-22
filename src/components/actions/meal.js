@@ -1,3 +1,4 @@
+import { uuid } from 'uuidv4'
 import { addFood } from './food'
 import { clearFood } from './food'
 
@@ -19,7 +20,10 @@ export const addMeal = (meal) => ({
 export const addFoodToMeal = (food) => {
     return (dispatch, getState) => {
         dispatch(addFood(food))
-        const meal = getState().food
+        const meal = {
+            uuid: uuid(),
+            ...getState().food
+        }
         dispatch(clearFood())
         return dispatch(addMeal(meal))
     }
