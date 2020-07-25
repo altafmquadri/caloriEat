@@ -1,13 +1,16 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import { Router, Switch, Route } from 'react-router-dom'
+import { createBrowserHistory } from 'history'
 import App from '../components/App'
 import SearchFood from '../components/SearchFood'
 import NotFoundPage from '../components/NotFoundPage'
 import Header from '../components/Header'
 import EditMealPage from '../components/EditMealPage'
 
+const history = createBrowserHistory()
+
 const AppRouter = () => (
-    <Router>
+    <Router history={history}>
         <Header />
         <Switch>
             <Route exact path='/' component={App} />

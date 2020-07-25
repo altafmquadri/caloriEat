@@ -5,7 +5,7 @@ import MealItem from './MealItem'
 const MealList = (props) => {
     return (
         <div>
-            {!props.meals.length ? (
+            {props.meals.length === 0 ? (
                 <div>
                     <span>No Meals</span>
                 </div>

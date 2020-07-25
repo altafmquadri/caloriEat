@@ -4,6 +4,8 @@ import { Link } from 'react-router-dom'
 
 
 const MealItem = (props) => {
+    console.log(props.uuid);
+    console.log(props);
     return (
         <div>
             <Link to={`/edit/${props.uuid}`}>
