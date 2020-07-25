@@ -66,7 +66,7 @@ class EditMealPage extends Component {
 
 
 const mapStateToProps = (state, props) => ({
-    meal: state.meals.find(meal => meal.uuid = props.match.params.uuid)
+    meal: state.meals.find(meal => meal.uuid === props.match.params.uuid)
 })
 
 const mapDispatchToProps = dispatch => ({

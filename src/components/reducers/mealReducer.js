@@ -14,7 +14,6 @@ const mealReducer = (state = [], action) => {
                     PROCNT: { quantity: protein },
                 }
             } = action.payload
-            console.log(action.uuid);
             const item = {
                 ...state.find(meal => meal.uuid === action.uuid),
                 ...action.properties,
