@@ -7,7 +7,7 @@ const MealItem = (props) => {
     return (
         <div>
             <Link to={`/edit/${props.uuid}`}>
-                <h1>{props.foodItem}</h1>
+                <h2>{props.foodItem}</h2>
             </Link>
             <h3>{props.calories}</h3>
         </div>

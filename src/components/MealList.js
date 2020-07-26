@@ -1,5 +1,4 @@
 import React from 'react';
-import { connect } from 'react-redux'
 import MealItem from './MealItem'
 
 const MealList = (props) => {
@@ -18,8 +17,4 @@ const MealList = (props) => {
     );
 }
 
-const mapStateToProps = state => ({
-    meals: state.meals
-})
-
-export default connect(mapStateToProps)(MealList);
+export default MealList
