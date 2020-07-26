@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import InputForm from './InputForm'
 import DisplayFood from './DisplayFood';
+import AddedList from './AddedList'
 
 class SearchFood extends Component {
     state = {}
@@ -10,6 +11,9 @@ class SearchFood extends Component {
                 <h1>Search Food</h1>
                 <InputForm />
                 <DisplayFood />
+                <div>
+                    <AddedList />
+                </div>
             </div>
         );
     }
