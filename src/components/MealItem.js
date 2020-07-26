@@ -1,8 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
 
-
-
 const MealItem = (props) => {
     return (
         <div>
@@ -11,9 +9,7 @@ const MealItem = (props) => {
             </Link>
             <h3>{props.calories}</h3>
         </div>
-    );
+    )
 }
-
-
 
 export default MealItem

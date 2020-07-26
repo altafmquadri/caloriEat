@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import InputForm from './InputForm'
 import DisplayFood from './DisplayFood';
 
-
 class SearchFood extends Component {
     state = {}
     render() {

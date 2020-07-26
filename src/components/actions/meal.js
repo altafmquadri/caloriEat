@@ -12,6 +12,14 @@ export const addMeal = (meal) => ({
     payload: meal
 })
 
+/**
+ * @function editMeal passes the uuid, obj, mealCategory, and serving to the reducer to update state
+ * @param {string} uuid unique identifier
+ * @param {object} obj the object to be added to state
+ * @param {string} mealCategory the meal category to be added to state
+ * @param {object} serving the serving fetched from the api
+ * @returns {string, object, string, object} parameters that will update state in the reducer
+ */
 export const editMeal = (uuid, obj, mealCategory, serving) => ({
     type: 'EDIT_MEAL',
     uuid,
@@ -39,7 +47,13 @@ export const addFoodToMeal = (food) => {
     }
 }
 
-
+/**
+ * @function editServing redux-thunk function that fetches edited meal
+ * @param {string} uuid the unique id
+ * @param {object} fetchObj the object parameters required for updating state
+ * @param {string} mealCategory the category for the meal
+ * @returns {string, object, string, object} parameters to dispatch in editMeal action
+ */
 export const editServing = (uuid, fetchObj, mealCategory) => {
     return (dispatch) => {
         return fetch(`https://api.edamam.com/api/food-database/v2/nutrients?app_id=${process.env.EDAMAM_APP_ID}&app_key=${process.env.EDAMAM_APP_KEY}`, {

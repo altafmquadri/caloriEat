@@ -3,7 +3,6 @@ import { connect } from 'react-redux'
 import MealList from './MealList';
 import { capitalize } from '../helpers/helpers'
 
-
 class MealSummary extends Component {
     state = {}
 

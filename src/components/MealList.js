@@ -8,13 +8,14 @@ const MealList = (props) => {
                 <div>
                     <span>No Meals</span>
                 </div>
-            ) : (
+            )
+                : (
                     props.meals.map(meal =>
                         <MealItem key={meal.uuid} {...meal} />
                     )
                 )}
         </div>
-    );
+    )
 }
 
 export default MealList
