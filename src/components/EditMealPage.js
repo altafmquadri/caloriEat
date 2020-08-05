@@ -27,6 +27,7 @@ class EditMealPage extends Component {
             quantity: parseInt(quantity)
         }
         this.props.editServing(uuid, editsObj, mealCategory)
+        this.props.history.push('/')
 
     }
 

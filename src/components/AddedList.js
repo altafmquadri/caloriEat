@@ -5,7 +5,7 @@ const AddedList = (props) => {
     console.log(props);
     return (
         <div>
-            {props.meals.map(meal => (
+            {props.list.map(meal => (
                 <li key={meal.uuid}>{`${meal.foodItem} added, calories:${meal.calories}`}</li>
             ))}
         </div>
@@ -13,7 +13,7 @@ const AddedList = (props) => {
 }
 
 const mapStateToProps = (state) => ({
-    meals: state.meals
+    list: state.list
 })
 
 export default connect(mapStateToProps)(AddedList)
