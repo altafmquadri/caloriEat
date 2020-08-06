@@ -14,7 +14,6 @@ class SearchFood extends Component {
         this.props.history.push('/')
     }
     render() {
-        console.log(this.props)
         return (
             <div>
                 <h1>Search Food</h1>

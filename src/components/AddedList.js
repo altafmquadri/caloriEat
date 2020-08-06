@@ -2,7 +2,6 @@ import React from 'react';
 import { connect } from 'react-redux'
 
 const AddedList = (props) => {
-    console.log(props);
     return (
         <div>
             {props.list.map(meal => (
