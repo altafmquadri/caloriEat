@@ -30,6 +30,10 @@ const mealReducer = (state = [], action) => {
                 return meal
             })
         }
+        case 'DELETE_MEAL': {
+            const id = action.payload
+            return state.filter(meal => meal.uuid !== id)
+        }
         default:
             return state
     }

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux'
 import { editServing } from './actions/meal';
+import { deleteMeal } from './actions/meal'
 
 class EditMealPage extends Component {
     constructor(props) {
@@ -28,7 +29,11 @@ class EditMealPage extends Component {
         }
         this.props.editServing(uuid, editsObj, mealCategory)
         this.props.history.push('/')
+    }
 
+    delete = () => {
+        this.props.deleteMeal(this.state.uuid)
+        this.props.history.push('/')
     }
 
     render() {
@@ -59,18 +64,19 @@ class EditMealPage extends Component {
                         </select>
                         <button type="submit">Edit Meal</button>
                     </form>
+                    <button onClick={this.delete}>Remove Meal</button>
                 </div>
             </div>
         )
     }
 }
 
-
 const mapStateToProps = (state, props) => ({
     meal: state.meals.find(meal => meal.uuid === props.match.params.uuid)
 })
 
 const mapDispatchToProps = dispatch => ({
-    editServing: (uuid, fetchObj, mealCategory) => dispatch(editServing(uuid, fetchObj, mealCategory))
+    editServing: (uuid, fetchObj, mealCategory) => dispatch(editServing(uuid, fetchObj, mealCategory)),
+    deleteMeal: id => dispatch(deleteMeal(id))
 })
 export default connect(mapStateToProps, mapDispatchToProps)(EditMealPage)

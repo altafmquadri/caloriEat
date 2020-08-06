@@ -32,6 +32,16 @@ export const editMeal = (uuid, obj, mealCategory, serving) => ({
 })
 
 /**
+ * @function deleteMeal action for reducer to delete Meal from state
+ * @param {string} id unique id of meal to be deleted from state
+ * @returns {object} to be passed to meal reducer
+ */
+export const deleteMeal = (id) => ({
+    type: 'DELETE_MEAL',
+    payload: id
+})
+
+/**
  * @function addFoodToMeal takes the state from food to create a meal item to be added to meals array, clears the food state
  * @param {object} food the food object will be added with meal category and date
  * @returns {function} that dispatches meal to meal reducer and to list reducer to update state
