@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux'
 import moment from 'moment'
 import { SingleDatePicker } from 'react-dates'
-import { addFoodToMeal } from './actions/meal'
+import { addFoodToMeal } from '../actions/meal'
 
 class AddFoodForm extends Component {
     state = {

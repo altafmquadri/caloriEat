@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux'
-import { editServing } from './actions/meal';
-import { deleteMeal } from './actions/meal'
+import { editServing } from '../actions/meal';
+import { deleteMeal } from '../actions/meal'
 
 class EditMealPage extends Component {
     constructor(props) {

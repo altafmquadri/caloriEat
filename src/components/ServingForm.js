@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux'
-import { fetchServing } from './actions/food'
+import { fetchServing } from '../actions/food'
 
 class ServingForm extends Component {
     state = {

@@ -3,7 +3,7 @@ import { connect } from 'react-redux'
 import InputForm from './InputForm'
 import DisplayFood from './DisplayFood';
 import AddedList from './AddedList'
-import { clearList } from './actions/list';
+import { clearList } from '../actions/list';
 
 class SearchFood extends Component {
     componentWillUnmount() {
