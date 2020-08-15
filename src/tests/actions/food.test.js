@@ -10,7 +10,7 @@ describe('food actions', () => {
         })
     })
     test('should get measurements to action object', () => {
-        const action = getServing(food, measurement)
+        const action = getServing(food, measurement) 
         expect(action).toEqual({
             type: 'GET_SERVING',
             payload: food,
