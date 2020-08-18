@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<DisplayFood renders DisplayFood when Food has been searched 1`] = `
+<div>
+  <div>
+    <h1>
+      milk
+    </h1>
+    <h3>
+      Calories: 
+      148
+    </h3>
+    <h3>
+      Carbohydrates: 
+      11.71
+      g
+    </h3>
+    <h3>
+      Fat: 
+      7.93
+      g
+    </h3>
+    <h3>
+      Fiber: 
+      0.00
+      g
+    </h3>
+    <h3>
+      Protein: 
+      7.69
+      g
+    </h3>
+    <img
+      alt="milk"
+      src="https://www.edamam.com/food-img/7c9/7c9962acf83654a8d98ea6a2ade93735.jpg"
+    />
+    <div>
+      <Connect(ServingForm) />
+      <Connect(AddFoodForm) />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<DisplayFood renders DisplayFood when no Food has been searched 1`] = `<div />`;

@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<SearchFood /> renders SearchFood component 1`] = `
+<div>
+  <h1>
+    Search Food
+  </h1>
+  <Connect(InputForm) />
+  <Connect(DisplayFood) />
+  <button
+    onClick={[Function]}
+  >
+    Done
+  </button>
+  <div>
+    <Connect(AddedList) />
+  </div>
+</div>
+`;

@@ -5,7 +5,7 @@ import DisplayFood from './DisplayFood';
 import AddedList from './AddedList'
 import { clearList } from '../actions/list';
 
-class SearchFood extends Component {
+export class SearchFood extends Component {
     componentWillUnmount() {
         this.props.clearList()
     }

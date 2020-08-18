@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<AddedList/> renders AddedList when there are meals added 1`] = `
+<div>
+  <li
+    key="1"
+  >
+    milk added, calories:148
+  </li>
+  <li
+    key="2"
+  >
+    oreo added, calories:55
+  </li>
+  <li
+    key="3"
+  >
+    french fries added, calories:255
+  </li>
+</div>
+`;
+
+exports[`<AddedList/> renders AddedList when there are no meals added 1`] = `<div />`;

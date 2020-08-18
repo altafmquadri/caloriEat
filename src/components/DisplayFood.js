@@ -3,7 +3,7 @@ import { connect } from 'react-redux'
 import ServingForm from './ServingForm'
 import AddFoodForm from './AddFoodForm'
 
-class DisplayFood extends Component {
+export class DisplayFood extends Component {
 
     render() {
         const {
