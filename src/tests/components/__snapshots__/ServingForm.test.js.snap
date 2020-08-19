@@ -1,0 +1,89 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ServingForm /> should render ServingForm 1`] = `
+<form
+  onSubmit={[Function]}
+>
+  <select
+    onChange={[Function]}
+    value=""
+  >
+    <option
+      key="0"
+      value="http://www.edamam.com/ontologies/edamam.owl#Measure_serving"
+    >
+      Serving
+    </option>
+    <option
+      key="1"
+      value="http://www.edamam.com/ontologies/edamam.owl#Measure_gram"
+    >
+      Gram
+    </option>
+    <option
+      key="2"
+      value="http://www.edamam.com/ontologies/edamam.owl#Measure_ounce"
+    >
+      Ounce
+    </option>
+    <option
+      key="3"
+      value="http://www.edamam.com/ontologies/edamam.owl#Measure_pound"
+    >
+      Pound
+    </option>
+    <option
+      key="4"
+      value="http://www.edamam.com/ontologies/edamam.owl#Measure_kilogram"
+    >
+      Kilogram
+    </option>
+    <option
+      key="5"
+      value="http://www.edamam.com/ontologies/edamam.owl#Measure_tablespoon"
+    >
+      Tablespoon
+    </option>
+    <option
+      key="6"
+      value="http://www.edamam.com/ontologies/edamam.owl#Measure_cup"
+    >
+      Cup
+    </option>
+    <option
+      key="7"
+      value="http://www.edamam.com/ontologies/edamam.owl#Measure_bottle"
+    >
+      Bottle
+    </option>
+    <option
+      key="8"
+      value="http://www.edamam.com/ontologies/edamam.owl#Measure_fluid_ounce"
+    >
+      Fluid ounce
+    </option>
+    <option
+      key="9"
+      value="http://www.edamam.com/ontologies/edamam.owl#Measure_quart"
+    >
+      Quart
+    </option>
+    <option
+      key="10"
+      value="http://www.edamam.com/ontologies/edamam.owl#Measure_gallon"
+    >
+      Gallon
+    </option>
+  </select>
+  <input
+    onChange={[Function]}
+    type="text"
+    value={1}
+  />
+  <button
+    type="submit"
+  >
+    Submit
+  </button>
+</form>
+`;

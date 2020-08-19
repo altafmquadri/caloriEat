@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux'
 import { fetchFood } from '../actions/food'
 
-class InputForm extends Component {
+export class InputForm extends Component {
     state = {
         foodItem: ''
     }

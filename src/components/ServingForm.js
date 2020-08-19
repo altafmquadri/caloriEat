@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux'
 import { fetchServing } from '../actions/food'
 
-class ServingForm extends Component {
+export class ServingForm extends Component {
     state = {
         quantity: 1,
         measureURI: '',

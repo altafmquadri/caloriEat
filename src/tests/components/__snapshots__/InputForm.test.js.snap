@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<InputForm /> should render InputForm 1`] = `
+<form
+  onSubmit={[Function]}
+>
+  <input
+    onChange={[Function]}
+    placeholder="enter food item here"
+    type="text"
+    value=""
+  />
+  <button
+    type="submit"
+  >
+    Find Food
+  </button>
+</form>
+`;

@@ -4,7 +4,7 @@ import moment from 'moment'
 import { SingleDatePicker } from 'react-dates'
 import { addFoodToMeal } from '../actions/meal'
 
-class AddFoodForm extends Component {
+export class AddFoodForm extends Component {
     state = {
         date: moment(),
         mealCategory: 'breakfast',
