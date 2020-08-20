@@ -27,19 +27,25 @@ describe('<ServingForm />', () => {
     test('should test onSubmit prop for valid form submission', () => {
         const onSubmit = jest.fn()
         const fetchServing = jest.fn()
+        const value = "cup";
         const arg = {
             quantity: expect.any(Number),
             measureURI: expect.any(String),
-            foodId: expect.any(Number)
+            foodId: expect.any(String)
         }
         const wrapper = shallow(<ServingForm
             food={food}
             onSubmit={onSubmit}
             fetchServing={fetchServing} />)
+
+        //add to pass guard condition of selecting a measurement in dropdown
+        wrapper.find("select").simulate("change", {
+            target: { value },
+        })
+
         wrapper.find('form').simulate('submit', {
             preventDefault: () => { }
         })
-        expect(fetchServing).toHaveBeenCalled()
+        expect(fetchServing).toHaveBeenLastCalledWith(arg)
     })
-
 })
