@@ -38,7 +38,8 @@ describe('<ServingForm />', () => {
             onSubmit={onSubmit}
             fetchServing={fetchServing} />)
 
-        //add to pass guard condition of selecting a measurement in dropdown
+        //add to pass guard condition of selecting a measurement in dropdown for onSubmit
+        //if (!this.state.measureURI) return
         wrapper.find("select").simulate("change", {
             target: { value },
         })

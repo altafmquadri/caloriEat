@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
 
-const MealItem = (props) => {
+export const MealItem = (props) => {
     return (
         <div>
             <Link to={`/edit/${props.uuid}`}>

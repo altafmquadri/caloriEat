@@ -5,7 +5,7 @@ import { SingleDatePicker } from 'react-dates'
 import MealList from './MealList';
 import { capitalize } from '../helpers/helpers'
 
-class MealSummary extends Component {
+export class MealSummary extends Component {
     state = {
         date: moment(),
         calendarFocused: false
