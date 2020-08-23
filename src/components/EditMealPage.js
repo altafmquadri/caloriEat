@@ -28,7 +28,11 @@ class EditMealPage extends Component {
             quantity: parseInt(quantity)
         }
         this.props.editServing(uuid, editsObj, mealCategory)
-        this.props.history.push('/')
+        this.props.history.push(
+            {
+                pathname: '/',
+                state: { date: this.props.location.date }
+            })
     }
 
     delete = () => {
@@ -37,6 +41,7 @@ class EditMealPage extends Component {
     }
 
     render() {
+        console.log(this.props)
         const { foodItem, calories, measures } = this.props.meal
         const { measureURI, quantity, mealCategory } = this.state
         return (

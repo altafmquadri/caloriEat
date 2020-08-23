@@ -5,7 +5,6 @@ exports[`<MealList/> renders MealList with meals 1`] = `
   <MealItem
     calories={148}
     carbohydrates="11.71"
-    date="2020-08-17T18:36:13.173Z"
     fat="7.93"
     fiber="0.00"
     foodId="food_b49rs1kaw0jktabzkg2vvanvvsis"
@@ -69,7 +68,6 @@ exports[`<MealList/> renders MealList with meals 1`] = `
   <MealItem
     calories={55}
     carbohydrates="8.52"
-    date="2020-08-17T18:36:36.867Z"
     fat="2.30"
     fiber="0.35"
     foodId="food_bihs8eobc58jvqbhmt6s3bym1rhf"
@@ -137,7 +135,6 @@ exports[`<MealList/> renders MealList with meals 1`] = `
   <MealItem
     calories={255}
     carbohydrates="40.76"
-    date="2020-08-17T18:37:00.048Z"
     fat="8.49"
     fiber="3.40"
     foodId="food_aqa4qtwapci86kar0l275bjqmkal"

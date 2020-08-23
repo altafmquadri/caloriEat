@@ -11,7 +11,7 @@ const MealList = (props) => {
             )
                 : (
                     props.meals.map(meal =>
-                        <MealItem key={meal.uuid} {...meal} />
+                        <MealItem key={meal.uuid} {...meal} date={props.date} />
                     )
                 )}
         </div>

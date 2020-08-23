@@ -3,7 +3,12 @@
 exports[`MealItem /> should render MealItem 1`] = `
 <div>
   <Link
-    to="/edit/1"
+    to={
+      Object {
+        "date": "2020-08-17T18:36:13.173Z",
+        "pathname": "/edit/1",
+      }
+    }
   >
     <h2>
       milk

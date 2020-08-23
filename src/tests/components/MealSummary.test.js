@@ -6,8 +6,10 @@ import { meals } from '../fixtures/mealReducer'
 
 describe('<MealSummary />', () => {
     test('should render MealSummary', () => {
-        const renderMealCategory = jest.fn()
-        const wrapper = shallow(<MealSummary meals={meals} />)
+        const location = {
+            state: undefined
+        }
+        const wrapper = shallow(<MealSummary meals={meals} location={location} />)
         expect(wrapper).toMatchSnapshot()
     })
 })
