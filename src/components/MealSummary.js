@@ -13,6 +13,10 @@ export class MealSummary extends Component {
     }
 
     componentDidMount() {
+        this.setDateOnMount()
+    }
+
+    setDateOnMount = () => {
         let date
         if (this.props.location.state) {
             date = moment(this.props.location.state.date)

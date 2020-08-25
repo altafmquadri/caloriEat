@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<MealSummary /> should render MealSummary 1`] = `
+exports[`<MealSummary /> should render MealSummary where date defaults to today 1`] = `
 <div>
   <h1>
     Summary Page
@@ -164,6 +164,356 @@ exports[`<MealSummary /> should render MealSummary 1`] = `
     <h1>
       Total Calories Consumed: 
       0
+    </h1>
+  </div>
+</div>
+`;
+
+exports[`<MealSummary /> should render MealSummary with date selected 1`] = `
+<div>
+  <h1>
+    Summary Page
+  </h1>
+  <withStyles(SingleDatePicker)
+    anchorDirection="left"
+    appendToBody={false}
+    block={false}
+    calendarInfoPosition="bottom"
+    customCloseIcon={null}
+    customInputIcon={null}
+    date={"2020-08-17T18:37:00.048Z"}
+    dayPickerNavigationInlineStyles={null}
+    daySize={39}
+    disableScroll={false}
+    disabled={false}
+    displayFormat={[Function]}
+    enableOutsideDays={false}
+    firstDayOfWeek={null}
+    focused={false}
+    hideKeyboardShortcutsPanel={false}
+    horizontalMargin={0}
+    horizontalMonthPadding={13}
+    id="caloriEat-meal-summary"
+    initialVisibleMonth={null}
+    inputIconPosition="before"
+    isDayBlocked={[Function]}
+    isDayHighlighted={[Function]}
+    isOutsideRange={[Function]}
+    isRTL={false}
+    keepFocusOnInput={false}
+    keepOpenOnDateSelect={false}
+    monthFormat="MMMM YYYY"
+    navNext={null}
+    navPosition="navPositionTop"
+    navPrev={null}
+    noBorder={false}
+    numberOfMonths={1}
+    onClose={[Function]}
+    onDateChange={[Function]}
+    onFocusChange={[Function]}
+    onNextMonthClick={[Function]}
+    onPrevMonthClick={[Function]}
+    openDirection="down"
+    orientation="horizontal"
+    phrases={
+      Object {
+        "calendarLabel": "Calendar",
+        "chooseAvailableDate": [Function],
+        "clearDate": "Clear Date",
+        "closeDatePicker": "Close",
+        "dateIsSelected": [Function],
+        "dateIsUnavailable": [Function],
+        "enterKey": "Enter key",
+        "escape": "Escape key",
+        "hideKeyboardShortcutsPanel": "Close the shortcuts panel.",
+        "homeEnd": "Home and end keys",
+        "jumpToNextMonth": "Move forward to switch to the next month.",
+        "jumpToPrevMonth": "Move backward to switch to the previous month.",
+        "keyboardBackwardNavigationInstructions": "Navigate backward to interact with the calendar and select a date. Press the question mark key to get the keyboard shortcuts for changing dates.",
+        "keyboardForwardNavigationInstructions": "Navigate forward to interact with the calendar and select a date. Press the question mark key to get the keyboard shortcuts for changing dates.",
+        "keyboardShortcuts": "Keyboard Shortcuts",
+        "leftArrowRightArrow": "Right and left arrow keys",
+        "moveFocusByOneDay": "Move backward (left) and forward (right) by one day.",
+        "moveFocusByOneMonth": "Switch months.",
+        "moveFocusByOneWeek": "Move backward (up) and forward (down) by one week.",
+        "moveFocustoStartAndEndOfWeek": "Go to the first or last day of a week.",
+        "openThisPanel": "Open this panel.",
+        "pageUpPageDown": "page up and page down keys",
+        "questionMark": "Question mark",
+        "returnFocusToInput": "Return to the date input field.",
+        "roleDescription": "datepicker",
+        "selectFocusedDate": "Select the date in focus.",
+        "showKeyboardShortcutsPanel": "Open the keyboard shortcuts panel.",
+        "upArrowDownArrow": "up and down arrow keys",
+      }
+    }
+    placeholder="Date"
+    readOnly={false}
+    regular={false}
+    renderCalendarInfo={null}
+    renderDayContents={null}
+    renderMonthElement={null}
+    renderMonthText={null}
+    renderNavNextButton={null}
+    renderNavPrevButton={null}
+    renderWeekHeaderElement={null}
+    reopenPickerOnClearDate={false}
+    required={false}
+    screenReaderInputMessage=""
+    showClearDate={false}
+    showDefaultInputIcon={false}
+    small={false}
+    verticalHeight={null}
+    verticalSpacing={22}
+    weekDayFormat="dd"
+    withFullScreenPortal={false}
+    withPortal={false}
+  />
+  <button
+    onClick={[Function]}
+  >
+    Today
+  </button>
+  <div
+    key="breakfast"
+  >
+    <h1>
+      Breakfast
+    </h1>
+    <MealList
+      date={1597689420048}
+      meals={
+        Array [
+          Object {
+            "calories": 148,
+            "carbohydrates": "11.71",
+            "date": "2020-08-17T18:36:13.173Z",
+            "fat": "7.93",
+            "fiber": "0.00",
+            "foodId": "food_b49rs1kaw0jktabzkg2vvanvvsis",
+            "foodItem": "milk",
+            "image": "https://www.edamam.com/food-img/7c9/7c9962acf83654a8d98ea6a2ade93735.jpg",
+            "mealCategory": "breakfast",
+            "measureURI": "http://www.edamam.com/ontologies/edamam.owl#Measure_cup",
+            "measures": Array [
+              Object {
+                "label": "Serving",
+                "uri": "http://www.edamam.com/ontologies/edamam.owl#Measure_serving",
+              },
+              Object {
+                "label": "Gram",
+                "uri": "http://www.edamam.com/ontologies/edamam.owl#Measure_gram",
+              },
+              Object {
+                "label": "Ounce",
+                "uri": "http://www.edamam.com/ontologies/edamam.owl#Measure_ounce",
+              },
+              Object {
+                "label": "Pound",
+                "uri": "http://www.edamam.com/ontologies/edamam.owl#Measure_pound",
+              },
+              Object {
+                "label": "Kilogram",
+                "uri": "http://www.edamam.com/ontologies/edamam.owl#Measure_kilogram",
+              },
+              Object {
+                "label": "Tablespoon",
+                "uri": "http://www.edamam.com/ontologies/edamam.owl#Measure_tablespoon",
+              },
+              Object {
+                "label": "Cup",
+                "uri": "http://www.edamam.com/ontologies/edamam.owl#Measure_cup",
+              },
+              Object {
+                "label": "Bottle",
+                "uri": "http://www.edamam.com/ontologies/edamam.owl#Measure_bottle",
+              },
+              Object {
+                "label": "Fluid ounce",
+                "uri": "http://www.edamam.com/ontologies/edamam.owl#Measure_fluid_ounce",
+              },
+              Object {
+                "label": "Quart",
+                "uri": "http://www.edamam.com/ontologies/edamam.owl#Measure_quart",
+              },
+              Object {
+                "label": "Gallon",
+                "uri": "http://www.edamam.com/ontologies/edamam.owl#Measure_gallon",
+              },
+            ],
+            "protein": "7.69",
+            "quantity": 1,
+            "uuid": "1",
+          },
+        ]
+      }
+    />
+    <h4>
+      Total: 
+      148
+    </h4>
+  </div>
+  <div
+    key="lunch"
+  >
+    <h1>
+      Lunch
+    </h1>
+    <MealList
+      date={1597689420048}
+      meals={
+        Array [
+          Object {
+            "calories": 255,
+            "carbohydrates": "40.76",
+            "date": "2020-08-17T18:37:00.048Z",
+            "fat": "8.49",
+            "fiber": "3.40",
+            "foodId": "food_aqa4qtwapci86kar0l275bjqmkal",
+            "foodItem": "french fries",
+            "image": "https://www.edamam.com/food-img/559/559b143365bf3dde8d5889ec627e1da7.jpg",
+            "mealCategory": "lunch",
+            "measureURI": "http://www.edamam.com/ontologies/edamam.owl#Measure_ounce",
+            "measures": Array [
+              Object {
+                "label": "Serving",
+                "uri": "http://www.edamam.com/ontologies/edamam.owl#Measure_serving",
+              },
+              Object {
+                "label": "Strip",
+                "uri": "http://www.edamam.com/ontologies/edamam.owl#Measure_strip",
+              },
+              Object {
+                "label": "Gram",
+                "uri": "http://www.edamam.com/ontologies/edamam.owl#Measure_gram",
+              },
+              Object {
+                "label": "Ounce",
+                "uri": "http://www.edamam.com/ontologies/edamam.owl#Measure_ounce",
+              },
+              Object {
+                "label": "Pound",
+                "uri": "http://www.edamam.com/ontologies/edamam.owl#Measure_pound",
+              },
+              Object {
+                "label": "Kilogram",
+                "uri": "http://www.edamam.com/ontologies/edamam.owl#Measure_kilogram",
+              },
+            ],
+            "protein": "3.98",
+            "quantity": 6,
+            "uuid": "3",
+          },
+        ]
+      }
+    />
+    <h4>
+      Total: 
+      255
+    </h4>
+  </div>
+  <div
+    key="dinner"
+  >
+    <h1>
+      Dinner
+    </h1>
+    <MealList
+      date={1597689420048}
+      meals={Array []}
+    />
+    <h4>
+      Total: 
+      0
+    </h4>
+  </div>
+  <div
+    key="snack"
+  >
+    <h1>
+      Snack
+    </h1>
+    <MealList
+      date={1597689420048}
+      meals={
+        Array [
+          Object {
+            "calories": 55,
+            "carbohydrates": "8.52",
+            "date": "2020-08-17T18:36:36.867Z",
+            "fat": "2.30",
+            "fiber": "0.35",
+            "foodId": "food_bihs8eobc58jvqbhmt6s3bym1rhf",
+            "foodItem": "oreo",
+            "image": "https://www.edamam.com/food-img/a90/a9011c79689c79db4f1a64776509dc69.jpg",
+            "mealCategory": "snack",
+            "measureURI": "http://www.edamam.com/ontologies/edamam.owl#Measure_cookie",
+            "measures": Array [
+              Object {
+                "label": "Whole",
+                "uri": "http://www.edamam.com/ontologies/edamam.owl#Measure_unit",
+              },
+              Object {
+                "label": "Serving",
+                "uri": "http://www.edamam.com/ontologies/edamam.owl#Measure_serving",
+              },
+              Object {
+                "label": "Cookie",
+                "uri": "http://www.edamam.com/ontologies/edamam.owl#Measure_cookie",
+              },
+              Object {
+                "label": "Oreo",
+                "uri": "http://www.edamam.com/ontologies/edamam.owl#Measure_oreo",
+              },
+              Object {
+                "label": "Sandwich",
+                "uri": "http://www.edamam.com/ontologies/edamam.owl#Measure_sandwich",
+              },
+              Object {
+                "label": "Box",
+                "uri": "http://www.edamam.com/ontologies/edamam.owl#Measure_box",
+              },
+              Object {
+                "label": "Container",
+                "uri": "http://www.edamam.com/ontologies/edamam.owl#Measure_container",
+              },
+              Object {
+                "label": "Package",
+                "uri": "http://www.edamam.com/ontologies/edamam.owl#Measure_package",
+              },
+              Object {
+                "label": "Gram",
+                "uri": "http://www.edamam.com/ontologies/edamam.owl#Measure_gram",
+              },
+              Object {
+                "label": "Ounce",
+                "uri": "http://www.edamam.com/ontologies/edamam.owl#Measure_ounce",
+              },
+              Object {
+                "label": "Pound",
+                "uri": "http://www.edamam.com/ontologies/edamam.owl#Measure_pound",
+              },
+              Object {
+                "label": "Kilogram",
+                "uri": "http://www.edamam.com/ontologies/edamam.owl#Measure_kilogram",
+              },
+            ],
+            "protein": "0.63",
+            "quantity": 1,
+            "uuid": "2",
+          },
+        ]
+      }
+    />
+    <h4>
+      Total: 
+      55
+    </h4>
+  </div>
+  <div>
+    <h1>
+      Total Calories Consumed: 
+      458
     </h1>
   </div>
 </div>
