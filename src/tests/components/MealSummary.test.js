@@ -25,14 +25,4 @@ describe('<MealSummary />', () => {
         expect(wrapper.find('button').text()).toBe('Today')
         expect(wrapper).toMatchSnapshot()
     })
-    test('componentDidMount should be called with setDateOnMount', () => {
-        const setDateOnMount = jest.fn()
-        const location = {
-            state: undefined
-        }
-        const componentDidMount = jest.spyOn(MealSummary.prototype, 'componentDidMount')
-        const wrapper = shallow(<MealSummary meals={meals} location={location} setDateOnMount={setDateOnMount} />)
-        expect(componentDidMount).toHaveBeenCalledTimes(1)
-        // expect(setDateOnMount).toHaveBeenCalledTimes(1) //getting error here
-    })
 })

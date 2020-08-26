@@ -3,7 +3,7 @@ import { connect } from 'react-redux'
 import { editServing } from '../actions/meal';
 import { deleteMeal } from '../actions/meal'
 
-class EditMealPage extends Component {
+export class EditMealPage extends Component {
     constructor(props) {
         super(props)
         this.state = {
@@ -41,7 +41,6 @@ class EditMealPage extends Component {
     }
 
     render() {
-        console.log(this.props)
         const { foodItem, calories, measures } = this.props.meal
         const { measureURI, quantity, mealCategory } = this.state
         return (
